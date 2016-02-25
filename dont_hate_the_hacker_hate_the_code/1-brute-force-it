@@ -1,0 +1,6 @@
+#!/bin/bash
+for password in $(strings ./a.out)
+do
+    cp ./a.out ./p.out
+    ./p.out $password
+done
